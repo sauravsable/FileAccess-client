@@ -25,7 +25,7 @@ export default function User() {
 
     const fetchUserData = async () => {
       try {
-        const response = await fetch('http://localhost:5000/getUserData', {
+        const response = await fetch('https://fileaccess-backend.onrender.com/getUserData', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

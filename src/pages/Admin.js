@@ -14,7 +14,7 @@ export default function Admin() {
 
   const getusers = async () => {
     const userId = localStorage.getItem("id");
-    const response = await fetch("http://localhost:5000/getusers", {
+    const response = await fetch("https://fileaccess-backend.onrender.com/getusers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ export default function Admin() {
   };
 
   const grantAccess=async(userId)=>{
-    const response = await fetch("http://localhost:5000/grantaccess", {
+    const response = await fetch("https://fileaccess-backend.onrender.com/grantaccess", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export default function Admin() {
   }
 
   const withdrawAccess=async(userId)=>{
-    const response = await fetch("http://localhost:5000/withdrawaccess", {
+    const response = await fetch("https://fileaccess-backend.onrender.com/withdrawaccess", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
